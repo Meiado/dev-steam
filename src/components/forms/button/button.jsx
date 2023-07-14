@@ -1,7 +1,7 @@
 import styles from './button.module.css'
 
-export const Button = ({children}) => {
+export const Button = ({children, fullWidth}) => {
   return (
-    <button className={styles.button}>{children}</button>
+    <button className={`${styles.button} ${fullWidth && styles.fullwidth}`}>{children}</button>
   )
 }
